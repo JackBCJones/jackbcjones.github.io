@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-.main {
+.main, .about {
     margin: 25px;
     color: #24252A;
     font-family: "Montserrat", sans-serif;
@@ -52,4 +52,29 @@ header {
 
 .nav_links li a:hover {
     color: #0088A9
+}
+#contact{
+    border: solid #24252A 50%;
+}
+#contact a:hover {
+    color: #0088A9
+}
+
+.about {
+    margin-top: 400px;
+    justify-content: left;
+    margin-right: 50%;
+}
+.about p {
+    line-height: 25px;
+}
+.about h2 {
+    padding: 50px;
+}
+.about img {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 50%;
+    height: 400px;
+    width: 500px;
 }
