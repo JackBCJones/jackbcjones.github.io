@@ -53,11 +53,28 @@ header {
 .nav_links li a:hover {
     color: #0088A9
 }
-#contact{
-    border: solid #24252A 50%;
+#contact {
+    position: relative;
+    
 }
-#contact a:hover {
-    color: #0088A9
+#contact::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+#contact:hover::after {
+    transform: scaleX(1);
+    color: #0088A9;
+    transform-origin: left;
+    
 }
 
 .about {
