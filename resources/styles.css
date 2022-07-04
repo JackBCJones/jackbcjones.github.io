@@ -1,3 +1,12 @@
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
@@ -84,6 +93,7 @@ header {
 }
 .about p {
     line-height: 25px;
+    margin-left: 10%;
 }
 .about h2 {
     padding: 50px;
