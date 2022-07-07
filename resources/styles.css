@@ -1,11 +1,11 @@
 .transition-fade {
+    transition: 0.4s;
     opacity: 1;
-    transition: 500ms;
-}
-
-html.is-animating .transition-fade {
+  }
+  
+  html.is-animating .transition-fade {
     opacity: 0;
-}
+  }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
@@ -22,7 +22,7 @@ html.is-animating .transition-fade {
     cursor: pointer;
 }
 
-.main, .about {
+main, .about, .form {
     margin: 25px;
     color: #24252A;
     font-family: "Montserrat", sans-serif;
@@ -30,6 +30,40 @@ html.is-animating .transition-fade {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.form {
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+.form form .user-details {
+    justify-content: space-between;
+}
+
+form .user-details .input-box { 
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 2-px);
+
+}
+.user-details .input-box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+
+}
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.form .submit-button {
+    height: 50px;
+    width: 100px;
 }
 
 ul, a {
@@ -90,6 +124,7 @@ header {
     margin-top: 400px;
     justify-content: left;
     margin-right: 50%;
+    margin-bottom: 200px;
 }
 .about p {
     line-height: 25px;
