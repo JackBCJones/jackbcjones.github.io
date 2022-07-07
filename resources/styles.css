@@ -1,3 +1,11 @@
+:root{
+    --primary-color: #edf0f1;
+    --secondary-color: #24252A;
+}
+.dark-theme {
+    --primary-color: #24252A;
+    --secondary-color: #edf0f1;
+}
 .transition-fade {
     transition: 0.4s;
     opacity: 1;
@@ -10,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
-    background-color: #edf0f1;
+    background-color: var(--primary-color);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -24,7 +32,7 @@
 
 main, .about, .form {
     margin: 25px;
-    color: #24252A;
+    color: var(--secondary-color);
     font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
@@ -61,16 +69,17 @@ form .user-details .input-box {
     font-size: 16px;
 }
 
-.form .submit-button {
+.form form .user-details #submit-button button{
     height: 50px;
     width: 100px;
+    color: var(--secondary-color);
 }
 
 ul, a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #24252A;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 header {
@@ -140,3 +149,4 @@ header {
     height: 400px;
     width: 500px;
 }
+
