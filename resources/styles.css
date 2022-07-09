@@ -6,14 +6,14 @@
     --primary-color: #24252A;
     --secondary-color: #edf0f1;
 }
-/* .transition-fade {
+.transition-fade {
     transition: 0.4s;
     opacity: 1;
   }
   
   html.is-animating .transition-fade {
     opacity: 0;
-  } */
+  }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
