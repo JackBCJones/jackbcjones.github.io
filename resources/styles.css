@@ -6,14 +6,6 @@
     --primary-color: #24252A;
     --secondary-color: #edf0f1;
 }
-/* .transition-fade {
-    transition: 0.4s;
-    opacity: 1;
-  }
-  
-  html.is-animating .transition-fade {
-    opacity: 0;
-  } */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
@@ -30,7 +22,7 @@
     cursor: pointer;
 }
 
-main, .about, .form {
+main, .about, .form, .hero {
     margin: 25px;
     color: var(--secondary-color);
     font-family: "Montserrat", sans-serif;
@@ -96,6 +88,7 @@ header {
 .nav_links li {
     display: inline-block;
     padding: 0px 20px;
+    background: none;
 }
 
 .nav_links li a, #dark {
@@ -132,21 +125,20 @@ header {
 
 .about {
     margin-top: 400px;
-    justify-content: left;
-    margin-right: 50%;
-    margin-bottom: 200px;
+    display: flex;
 }
 .about p {
     line-height: 25px;
-    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 20%;
+
 }
 .about h2 {
-    padding: 50px;
+    align-items: left;
 }
 .about img {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 50%;
+    margin-top: 5%;
     height: 400px;
     width: 500px;
 }
